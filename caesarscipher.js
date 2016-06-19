@@ -10,9 +10,6 @@
 function rot13(str) { // LBH QVQ VG!
   var newString = "";
   
-  var letterNumber = /^[0-9a-zA-Z]+$/;  
- // if((inputtxt.value.match(letterNumber))
-  
   for (i=0; i< str.length; i++) {
     
     var code = str.charCodeAt(i);

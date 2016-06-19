@@ -1,5 +1,8 @@
-// Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+// HELP!!!!!!! This code is ugly as fuck and I think they wanted me to do it 
+// using Array.filter(). I tried to use that but couldn't figure it out, so 
+// I did it the ugly way. 
 
+// Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
 // For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
 
 function titleCase(str) {

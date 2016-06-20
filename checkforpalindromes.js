@@ -15,13 +15,8 @@ function palindrome(str) {
   var nospace = alpha.replace(' ', '');
   var split = nospace.split("");
   var reverse = split.reverse().join("");
- 
-    if (reverse == nospace) {
-    return true;
-  }
-  else {
-    return false;
-  }
+  
+  return reverse == nospace;
 }
 
 

@@ -1,24 +1,18 @@
-// HELP!!!!!!! This code is ugly as fuck and I think they wanted me to do it 
-// using Array.filter(). I tried to use that but couldn't figure it out, so 
-// I did it the ugly way. 
 
 // You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
 
-function destroyer(arr) {
 
-  var secondArray = [];
-  var thirdArray = [];
-  for (i=1; i<arguments.length; i++) {    
-    secondArray.push(arguments[i]);
-  }
-  
-  for (i=0; i< arr.length; i++) {
-    
-    if (secondArray.indexOf(arr[i]) == -1) {
-      thirdArray.push(arr[i]);
-    } 
-   } 
-  return thirdArray;
+function destroyer(arr) {
+        // go through each argument (start at 1)
+        for(var i = 1; i < arguments.length; i++) {
+                // this is what we need to remove:
+                var remove_this = arguments[i];
+                // filter returns new version of array, without that:
+                arr = arr.filter(function(arrItem) {
+                        return (arrItem != remove_this);
+                });
+        }
+        return arr;
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);

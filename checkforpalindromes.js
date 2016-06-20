@@ -7,7 +7,6 @@
 
 // We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race CAR" among others.
 
-
 function palindrome(str) {
   // Good luck!
   var lower = str.toLowerCase();
